@@ -30,10 +30,15 @@ datos de Auren.
 
 ### Conexiones de red
 
-Auren no realiza conexiones de red por sí misma, con una sola excepción que depende de vos: si
-abrís un video que está en una ubicación de red (por ejemplo, una carpeta compartida o una
-dirección web), el reproductor se conecta directamente a ese servidor para reproducirlo. Esa
-conexión es entre tu equipo y ese servidor; Auren no la intermedia ni recibe copia de ella.
+Auren no realiza conexiones de red por sí misma, con excepciones que dependen de vos:
+
+- Si abrís un video que está en una ubicación de red (por ejemplo, una carpeta compartida o una
+  dirección web), el reproductor se conecta directamente a ese servidor para reproducirlo. Esa
+  conexión es entre tu equipo y ese servidor; Auren no la intermedia ni recibe copia de ella.
+- Si elegís **Buscar subtítulos…**, Auren consulta directamente desde tu equipo al servicio público
+  SubtitleDB (`api.thesubtitledb.org`) y descarga el subtítulo que elijas. Se envía el texto de
+  búsqueda (derivado del nombre del archivo, o el que escribas) y, como en cualquier conexión web,
+  tu dirección IP. Auren no tiene servidores intermedios y esto solo ocurre cuando lo pedís.
 
 La versión distribuida por Microsoft Store se actualiza a través de la Store. La versión
 distribuida fuera de la Store consulta al arrancar si hay una versión nueva en un repositorio
@@ -89,10 +94,16 @@ You can remove this data at any time by uninstalling the app or deleting Auren's
 
 ### Network connections
 
-Auren does not make network connections on its own, with one exception that is up to you: if you
-open a video located on a network location (for example a shared folder or a web address), the
-player connects directly to that server to play it. That connection is between your device and that
-server; Auren does not intermediate it or receive a copy of it.
+Auren does not make network connections on its own, with exceptions that are up to you:
+
+- If you open a video located on a network location (for example a shared folder or a web
+  address), the player connects directly to that server to play it. That connection is between
+  your device and that server; Auren does not intermediate it or receive a copy of it.
+- If you choose **Search subtitles…**, Auren queries the public SubtitleDB service
+  (`api.thesubtitledb.org`) directly from your device and downloads the subtitle you pick. The
+  search text (derived from the file name, or whatever you type) is sent and, as with any web
+  connection, your IP address. Auren has no intermediary servers, and this only happens when you
+  ask for it.
 
 The version distributed through the Microsoft Store is updated by the Store. The version
 distributed outside the Store checks at startup whether a newer version exists in a public GitHub
